@@ -1,5 +1,6 @@
-console.log("Hello world!");
+let fruits = ["Pomme", "Orange", "Fraise"];
 
-let firstName = 'Sam';
-let age = 21;
-let isConnected = true;
+fruits.forEach((fruit) => {
+  console.log(fruit);
+});
+
