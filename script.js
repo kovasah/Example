@@ -77,9 +77,9 @@
 // });
 
 
-let values1 = ["Apple", 1, false, "2"];
-let values2 = [`5`, "Fries", 2, true];
-let values3 = ["Mars", "Strawberry", 9];
+// let values1 = ["Apple", 1, false, "2"];
+// let values2 = [`5`, "Fries", 2, true];
+// let values3 = ["Mars", "Strawberry", 9];
 
 // values1.splice(2, 2);
 // values1.shift();
@@ -89,20 +89,26 @@ let values3 = ["Mars", "Strawberry", 9];
 
 
 
-function isNumber(array) {
-  array.forEach((arrayElement) => {
-    if (typeof arrayElement === "number") {
-      console.log(arrayElement);
-    }
-  });
-}
+// function isNumber(array) {
+//   array.forEach((arrayElement) => {
+//     if (typeof arrayElement === "number") {
+//       console.log(arrayElement);
+//     }
+//   });
+// }
 
-console.log(values1);
-console.log(values2);
-console.log(values3);
+// console.log(values1);
+// console.log(values2);
+// console.log(values3);
 
 
 
 let studentCoursesA = ['Math', 'English', 'Programming'];
 let studentCoursesB = ['Geography', 'Spanish', 'Programming'];
 
+function commonWords(array1, array2) {
+  let newArray = array1.filter((word) => array1.includes(word) && array2.includes(word));
+  console.log(newArray);
+}
+
+commonWords(studentCoursesA, studentCoursesB);
