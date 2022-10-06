@@ -103,12 +103,23 @@
 
 
 
-let studentCoursesA = ['Math', 'English', 'Programming'];
-let studentCoursesB = ['Geography', 'Spanish', 'Programming'];
+// let studentCoursesA = ['Math', 'English', 'Programming'];
+// let studentCoursesB = ['Geography', 'Spanish', 'Programming'];
 
-function commonWords(array1, array2) {
-  let newArray = array1.filter((word) => array1.includes(word) && array2.includes(word));
-  console.log(newArray);
+// function commonWords(array1, array2) {
+//   let newArray = array1.filter((word) => array1.includes(word) && array2.includes(word));
+//   console.log(newArray);
+// }
+
+// commonWords(studentCoursesA, studentCoursesB);
+
+
+function handleRandomizeColor() {
+  let red = Math.floor(Math.random() * 256);
+  let green = Math.floor(Math.random() * 256);
+  let blue = Math.floor(Math.random() * 256);
+  let bgColor = "rgb(" + red + "," + green + "," + blue + ")";
+  document.body.style.background = bgColor;
 }
 
-commonWords(studentCoursesA, studentCoursesB);
+document.getElementById("btn").addEventListener('click', handleRandomizeColor)
